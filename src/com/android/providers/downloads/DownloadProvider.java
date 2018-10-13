@@ -1292,7 +1292,7 @@ public final class DownloadProvider extends ContentProvider {
                     }
                 }
 
-		count = qb.delete(db, where, whereArgs)
+		count = qb.delete(db, where, whereArgs);
                 break;
 
             default:
