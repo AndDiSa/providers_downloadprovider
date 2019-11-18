@@ -941,8 +941,6 @@ public final class DownloadProvider extends ContentProvider {
              final String selection, final String[] selectionArgs,
              final String sort) {
 
-        Helpers.validateSelection(selection, sAppReadableColumnsSet);
-
         SQLiteDatabase db = mOpenHelper.getReadableDatabase();
 
         int match = sURIMatcher.match(uri);
